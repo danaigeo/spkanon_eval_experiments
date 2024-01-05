@@ -1,5 +1,7 @@
 spkanon_eval
 checkpoints
-logs/stargan/train-success/1704243573/results
+logs/stargan/train_original/1704243573/results
+logs/stargan/xvec_lda_200/1704288955/results
+logs/stargan/test/1704282731/results
 logs/stargan/train-all
 logs/stargan/train

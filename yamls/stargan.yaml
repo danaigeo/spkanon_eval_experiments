@@ -3,7 +3,7 @@ name: "StarGANv2-VC"
 
 datasets_cfg: spkanon_eval/config/datasets/librispeech.yaml
 seed: 100
-log_dir: logs/stargan/xvec_lda_200
+log_dir: logs/stargan/train-2
 device: cpu # overwritten on runtime
 
 inference:
