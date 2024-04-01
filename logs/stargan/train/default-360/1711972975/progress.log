@@ -1,0 +1,148 @@
+2024-04-01 14:02:57,194 - progress - INFO - Initialized mel-spectrogram extractor with config:
+2024-04-01 14:02:57,195 - progress - INFO - 	n_mels: 80
+2024-04-01 14:02:57,195 - progress - INFO - 	n_fft: 2048
+2024-04-01 14:02:57,196 - progress - INFO - 	win_length: 1200
+2024-04-01 14:02:57,197 - progress - INFO - 	hop_length: 300
+2024-04-01 14:03:04,217 - progress - INFO - Passing target selection algorithm to star_gan
+2024-04-01 14:03:04,258 - progress - INFO - ### Start of inference with experiment folder `logs/stargan/train/default-360/1711972975`
+2024-04-01 14:03:04,259 - progress - INFO - Preparing datafile for stage eval for 0 speakers
+2024-04-01 14:03:04,282 - progress - INFO - 2492 samples included (4.774 h)
+2024-04-01 14:03:04,283 - progress - INFO - 36 samples too short (0.018 h)
+2024-04-01 14:03:04,284 - progress - INFO - 83 samples too long (0.531 h)
+2024-04-01 14:03:04,287 - progress - INFO - Done with datafile prep for stage eval
+2024-04-01 14:03:04,289 - progress - INFO - Creating eval. DL for `logs/stargan/train/default-360/1711972975/data/eval.txt`
+2024-04-01 14:03:04,290 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/eval.txt
+2024-04-01 14:03:04,295 - progress - INFO - 	Sample rate: 24000
+2024-04-01 14:03:04,297 - progress - INFO - 	Batch size: 2
+2024-04-01 14:03:04,297 - progress - INFO - 	Num. workers: 10
+2024-04-01 14:09:33,868 - progress - INFO - End of inference
+2024-04-01 14:09:33,869 - progress - INFO - ### Start of evaluation
+2024-04-01 14:09:33,869 - progress - INFO - Preparing datafile for stage train_eval for 0 speakers
+2024-04-01 14:09:36,047 - progress - INFO - 103781 samples included (363.396 h)
+2024-04-01 14:09:36,048 - progress - INFO - 216 samples too short (0.103 h)
+2024-04-01 14:09:36,049 - progress - INFO - 17 samples too long (0.107 h)
+2024-04-01 14:09:36,051 - progress - INFO - Done with datafile prep for stage train_eval
+2024-04-01 14:09:39,760 - progress - INFO - Training component `asv_ignorant`
+2024-04-01 14:09:40,080 - progress - INFO - Number of speakers in logs/stargan/train/default-360/1711972975/data/train_eval.txt: 921
+2024-04-01 14:09:40,081 - progress - INFO - Number of speakers in training file: 921
+2024-04-01 14:09:40,082 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/train_eval.txt
+2024-04-01 14:09:40,084 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/train_eval.txt
+2024-04-01 14:09:40,084 - progress - INFO - 	Sample rate: 16000
+2024-04-01 14:09:40,085 - progress - INFO - 	Batch size: 24
+2024-04-01 14:09:40,085 - progress - INFO - 	Num. workers: 10
+2024-04-01 15:23:05,922 - progress - INFO - Reducing dimensionality to 200 with LDA
+2024-04-01 15:23:09,412 - progress - INFO - Training PLDA model
+2024-04-01 15:23:11,938 - progress - INFO - Running evaluation with component `asv_ignorant`
+2024-04-01 15:23:12,139 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/eval_trials.txt
+2024-04-01 15:23:12,140 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/eval_trials.txt
+2024-04-01 15:23:12,140 - progress - INFO - 	Sample rate: 16000
+2024-04-01 15:23:12,141 - progress - INFO - 	Batch size: 24
+2024-04-01 15:23:12,141 - progress - INFO - 	Num. workers: 10
+2024-04-01 15:23:14,183 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/eval_enrolls.txt
+2024-04-01 15:23:14,186 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/eval_enrolls.txt
+2024-04-01 15:23:14,186 - progress - INFO - 	Sample rate: 16000
+2024-04-01 15:23:14,187 - progress - INFO - 	Batch size: 24
+2024-04-01 15:23:14,187 - progress - INFO - 	Num. workers: 10
+2024-04-01 15:23:20,956 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-01 15:23:21,284 - progress - INFO - Averaging LLRs across speakers
+2024-04-01 15:23:21,285 - progress - INFO - No. of speaker pairs: 98080
+2024-04-01 15:23:21,360 - progress - INFO - Analysing ASV results for logs/stargan/train/default-360/1711972975/data/anon_eval.txt
+2024-04-01 15:23:21,363 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-01 15:23:21,840 - progress - INFO - Computing EER for gender M
+2024-04-01 15:23:21,846 - progress - INFO - Computing EER for gender F
+2024-04-01 15:23:21,850 - progress - INFO - Computing EER for target 16
+2024-04-01 15:23:21,856 - progress - INFO - Computing EER for target 7
+2024-04-01 15:23:21,859 - progress - INFO - Computing EER for target 15
+2024-04-01 15:23:21,863 - progress - INFO - Computing EER for target 2
+2024-04-01 15:23:21,867 - progress - INFO - Computing EER for target 0
+2024-04-01 15:23:21,870 - progress - INFO - Computing EER for target 5
+2024-04-01 15:23:21,874 - progress - INFO - Computing EER for target 1
+2024-04-01 15:23:21,878 - progress - INFO - Computing EER for target 12
+2024-04-01 15:23:21,881 - progress - INFO - Computing EER for target 18
+2024-04-01 15:23:21,886 - progress - INFO - Computing EER for target 17
+2024-04-01 15:23:21,889 - progress - INFO - Computing EER for target 14
+2024-04-01 15:23:21,893 - progress - INFO - Computing EER for target 9
+2024-04-01 15:23:21,896 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:21,897 - progress - INFO - Computing EER for target 4
+2024-04-01 15:23:21,898 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:21,899 - progress - INFO - Computing EER for target 11
+2024-04-01 15:23:21,902 - progress - INFO - Computing EER for target 6
+2024-04-01 15:23:21,904 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:21,904 - progress - INFO - Computing EER for target 13
+2024-04-01 15:23:21,905 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:21,906 - progress - INFO - Computing EER for target 10
+2024-04-01 15:23:21,909 - progress - INFO - Computing EER for target 3
+2024-04-01 15:23:21,911 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:21,911 - progress - INFO - Computing EER for target 8
+2024-04-01 15:23:21,912 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 15:23:22,220 - progress - INFO - Training component `asv_lazy_informed`
+2024-04-01 15:23:22,223 - progress - INFO - Anonymizing training data: logs/stargan/train/default-360/1711972975/data/train_eval.txt
+2024-04-01 15:23:22,224 - progress - INFO - Set consistent targets of star_gan to False
+2024-04-01 15:23:22,224 - progress - INFO - Disabling consistent targets
+2024-04-01 15:23:22,226 - progress - INFO - Creating eval. DL for `logs/stargan/train/default-360/1711972975/data/train_eval.txt`
+2024-04-01 15:23:22,227 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/train_eval.txt
+2024-04-01 15:23:22,227 - progress - INFO - 	Sample rate: 16000
+2024-04-01 15:23:22,228 - progress - INFO - 	Batch size: 2
+2024-04-01 15:23:22,229 - progress - INFO - 	Num. workers: 10
+2024-04-01 20:02:56,716 - progress - INFO - Number of speakers in logs/stargan/train/default-360/1711972975/data/anon_train_eval.txt: 921
+2024-04-01 20:02:56,732 - progress - INFO - Number of speakers in training file: 921
+2024-04-01 20:02:56,734 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/anon_train_eval.txt
+2024-04-01 20:02:56,735 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/anon_train_eval.txt
+2024-04-01 20:02:56,736 - progress - INFO - 	Sample rate: 16000
+2024-04-01 20:02:56,736 - progress - INFO - 	Batch size: 24
+2024-04-01 20:02:56,737 - progress - INFO - 	Num. workers: 10
+2024-04-01 21:45:42,942 - progress - INFO - Reducing dimensionality to 200 with LDA
+2024-04-01 21:45:46,335 - progress - INFO - Training PLDA model
+2024-04-01 21:45:48,581 - progress - INFO - Running evaluation with component `asv_lazy_informed`
+2024-04-01 21:45:48,584 - progress - INFO - Datafile splits into trial and enrolls already exist, skipping
+2024-04-01 21:45:48,585 - progress - INFO - Anonymizing enrollment data of the ASV system
+2024-04-01 21:45:48,586 - progress - INFO - Set consistent targets of star_gan to True
+2024-04-01 21:45:48,586 - progress - INFO - Enabling consistent targets and removing previous targets
+2024-04-01 21:45:48,588 - progress - INFO - Creating eval. DL for `logs/stargan/train/default-360/1711972975/data/eval_enrolls.txt`
+2024-04-01 21:45:48,589 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/eval_enrolls.txt
+2024-04-01 21:45:48,590 - progress - INFO - 	Sample rate: 16000
+2024-04-01 21:45:48,590 - progress - INFO - 	Batch size: 2
+2024-04-01 21:45:48,591 - progress - INFO - 	Num. workers: 10
+2024-04-01 21:50:01,592 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/eval_trials.txt
+2024-04-01 21:50:01,595 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/eval_trials.txt
+2024-04-01 21:50:01,596 - progress - INFO - 	Sample rate: 16000
+2024-04-01 21:50:01,597 - progress - INFO - 	Batch size: 24
+2024-04-01 21:50:01,598 - progress - INFO - 	Num. workers: 10
+2024-04-01 21:50:04,087 - progress - INFO - Computing SpkId vectors of logs/stargan/train/default-360/1711972975/data/anon_eval_enrolls.txt
+2024-04-01 21:50:04,090 - progress - INFO - Creating dataloader for logs/stargan/train/default-360/1711972975/data/anon_eval_enrolls.txt
+2024-04-01 21:50:04,091 - progress - INFO - 	Sample rate: 16000
+2024-04-01 21:50:04,092 - progress - INFO - 	Batch size: 24
+2024-04-01 21:50:04,092 - progress - INFO - 	Num. workers: 10
+2024-04-01 21:50:12,294 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-01 21:50:12,616 - progress - INFO - Averaging LLRs across speakers
+2024-04-01 21:50:12,617 - progress - INFO - No. of speaker pairs: 98080
+2024-04-01 21:50:12,688 - progress - INFO - Analysing ASV results for logs/stargan/train/default-360/1711972975/data/anon_eval.txt
+2024-04-01 21:50:12,690 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-01 21:50:13,123 - progress - INFO - Computing EER for gender M
+2024-04-01 21:50:13,152 - progress - INFO - Computing EER for gender F
+2024-04-01 21:50:13,166 - progress - INFO - Computing EER for target 16
+2024-04-01 21:50:13,184 - progress - INFO - Computing EER for target 7
+2024-04-01 21:50:13,188 - progress - INFO - Computing EER for target 15
+2024-04-01 21:50:13,191 - progress - INFO - Computing EER for target 2
+2024-04-01 21:50:13,195 - progress - INFO - Computing EER for target 0
+2024-04-01 21:50:13,198 - progress - INFO - Computing EER for target 5
+2024-04-01 21:50:13,202 - progress - INFO - Computing EER for target 1
+2024-04-01 21:50:13,206 - progress - INFO - Computing EER for target 12
+2024-04-01 21:50:13,209 - progress - INFO - Computing EER for target 18
+2024-04-01 21:50:13,212 - progress - INFO - Computing EER for target 17
+2024-04-01 21:50:13,215 - progress - INFO - Computing EER for target 14
+2024-04-01 21:50:13,219 - progress - INFO - Computing EER for target 9
+2024-04-01 21:50:13,220 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,220 - progress - INFO - Computing EER for target 4
+2024-04-01 21:50:13,221 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,222 - progress - INFO - Computing EER for target 11
+2024-04-01 21:50:13,225 - progress - INFO - Computing EER for target 6
+2024-04-01 21:50:13,226 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,227 - progress - INFO - Computing EER for target 13
+2024-04-01 21:50:13,228 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,229 - progress - INFO - Computing EER for target 10
+2024-04-01 21:50:13,234 - progress - INFO - Computing EER for target 3
+2024-04-01 21:50:13,235 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,236 - progress - INFO - Computing EER for target 8
+2024-04-01 21:50:13,238 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-01 21:50:13,240 - progress - INFO - End of evaluation
