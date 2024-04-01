@@ -1,0 +1,11 @@
+srun \
+  --container-image=/netscratch/enroot/nvcr.io_nvidia_pytorch_23.08-py3.sqsh \
+  --container-mounts=/ds:/ds,/netscratch/$USER:/netscratch/$USER \
+  --container-workdir=/netscratch/$USER/spkanon \
+  --mem=100G \
+  --nodes=1 \
+  --ntasks=1 \
+  --cpus-per-task=10 \
+  --gpus-per-task=1 \
+  --partition=RTXA6000 \
+  --pty /bin/bash
