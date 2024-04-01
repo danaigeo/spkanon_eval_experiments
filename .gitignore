@@ -11,9 +11,13 @@ checkpoints
 slurm
 =2.3.0
 =0.5.15
-data
 LibriSpeech
-logs/knnvc
+target_feats
+logs/knnvc/train-new
+logs/knnvc/train
+logs/knnvc/debug
+logs/knnvc/eval/exp_with_targets
+logs/knnvc/eval/exp_with_model_ls360&edacc
 logs/stargan
 *.tar.gz
 __init__.py

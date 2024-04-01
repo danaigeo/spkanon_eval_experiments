@@ -1,0 +1,106 @@
+name: kNN-VC
+data:
+  config:
+    root_folder: /ds/audio
+    sample_rate: ${sample_rate}
+    batch_size: ${batch_size}
+    min_duration: 2
+    max_duration: 20
+    num_workers: 10
+  datasets:
+    eval:
+    - spkanon_eval/data/librispeech/ls-train-other-500.txt
+    train_eval:
+    - spkanon_eval/data/librispeech/ls-train-clean-360.txt
+    targets:
+    - spkanon_eval/data/librispeech/ls-dev-clean.txt
+seed: 0
+max_speakers: 150
+log_dir: logs/knnvc/eval/run_all_speakers_ls-train-clean-500
+device: cuda
+inference:
+  input:
+    spectrogram: spectrogram
+    target: target
+  run: true
+target_selection:
+  cls: spkanon_eval.target_selection.random.RandomSelector
+  consistent_targets: true
+sample_rate: 16000
+batch_size: 2
+featex:
+  wavlm:
+    cls: spkanon_eval.featex.wavlm.wrapper.WavlmWrapper
+    ckpt: checkpoints/knnvc/WavLM-Large.pt
+    layer: 6
+    hop_length: 320
+featproc:
+  knnvc:
+    cls: spkanon_models.knnvc.converter.Converter
+    n_neighbors: 4
+    target_feats: null
+    wavlm: ${featex.wavlm}
+    wavlm_dl:
+      batch_size: ${batch_size}
+      num_workers: ${data.config.num_workers}
+      sample_rate: ${sample_rate}
+    exp_folder: ${exp_folder}
+    input:
+      feats: feats
+      n_feats: n_feats
+      source: source
+      target: target
+  output:
+    featproc:
+    - wavlm
+    - target
+    - n_feats
+    featex: []
+synthesis:
+  cls: spkanon_models.knnvc.hifigan_wrapper.Hifigan
+  ckpt: checkpoints/knnvc/hifigan.pt
+  config: checkpoints/knnvc/config_v1_wavlm.json
+  hop_length: ${featex.wavlm.hop_length}
+  sample_rate: ${sample_rate}
+  input:
+    wavlm: wavlm
+    n_feats: n_feats
+eval:
+  config:
+    seed: 500
+    baseline: false
+    exp_folder: null
+    sample_rate: ${synthesis.sample_rate}
+    asv_reduce_dims: 200
+    spkid:
+      cls: spkanon_eval.featex.spkid.spkid.SpkId
+      path: speechbrain/spkrec-xvect-voxceleb
+      batch_size: 24
+      num_workers: ${data.config.num_workers}
+      finetune_config: spkanon_eval/config/components/spkid/train_xvec.yaml
+      emb_model_ckpt: ${eval.config.spkid_emb_model_ckpt}
+      train: ${eval.config.spkid_train}
+    spkid_emb_model_ckpt: null
+    spkid_train: false
+  components:
+    asv_ignorant:
+      cls: spkanon_eval.evaluation.asv.spkid_plda.ASV
+      scenario: ignorant
+      train: false
+      max_speakers: ${max_speakers}
+      reduced_dims: ${eval.config.asv_reduce_dims}
+      lda_ckpt: logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/lda.pkl
+      plda_ckpt: logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/plda.pkl
+      spkid: ${eval.config.spkid}
+    asv_lazy_informed:
+      cls: spkanon_eval.evaluation.asv.spkid_plda.ASV
+      scenario: lazy-informed
+      train: false
+      max_speakers: ${max_speakers}
+      inference: ${inference}
+      sample_rate: ${synthesis.sample_rate}
+      reduced_dims: ${eval.config.asv_reduce_dims}
+      lda_ckpt: logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/lda.pkl
+      plda_ckpt: logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/plda.pkl
+      spkid: ${eval.config.spkid}
+exp_folder: logs/knnvc/eval/run_all_speakers_ls-train-clean-500/1711911385

@@ -1,0 +1,3 @@
+dataset gender n_pairs threshold eer
+anon_eval M 16 0.8730331009449568 0.041666666666666664
+anon_eval F 25 1.047077635130567 0.0

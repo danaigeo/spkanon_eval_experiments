@@ -1,0 +1,2 @@
+dataset target n_pairs threshold eer
+anon_eval 0 4 2.411566432430173 0.0
