@@ -1,0 +1,209 @@
+2024-03-27 19:57:11,630 - progress - INFO - Preparing datafile for stage targets for 0 speakers
+2024-03-27 19:57:11,662 - progress - INFO - 2605 samples included (4.951 h)
+2024-03-27 19:57:11,663 - progress - INFO - 37 samples too short (0.019 h)
+2024-03-27 19:57:11,664 - progress - INFO - 0 samples too long (0.0 h)
+2024-03-27 19:57:11,668 - progress - INFO - Done with datafile prep for stage targets
+2024-03-27 19:57:21,955 - progress - INFO - {'cls': 'spkanon_models.knnvc.converter.Converter', 'n_neighbors': 4, 'target_feats': None, 'wavlm': '${featex.wavlm}', 'wavlm_dl': {'batch_size': '${batch_size}', 'num_workers': '${data.config.num_workers}', 'sample_rate': '${sample_rate}'}, 'exp_folder': '${exp_folder}', 'input': {'feats': 'feats', 'n_feats': 'n_feats', 'source': 'source', 'target': 'target'}}
+2024-03-27 19:57:21,963 - progress - INFO - logs/knnvc/train/default-360/1711565831
+2024-03-27 19:57:21,964 - progress - INFO - Loading target data
+2024-03-27 19:57:21,978 - progress - INFO - Extracting target features
+2024-03-27 19:57:29,850 - progress - INFO - Creating eval. DL for `logs/knnvc/train/default-360/1711565831/data/targets.txt`
+2024-03-27 19:57:29,851 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/targets.txt
+2024-03-27 19:57:29,853 - progress - INFO - 	Sample rate: 16000
+2024-03-27 19:57:29,856 - progress - INFO - 	Batch size: 2
+2024-03-27 19:57:29,858 - progress - INFO - 	Num. workers: 10
+2024-03-27 19:58:27,382 - progress - INFO - Passing target selection algorithm to knnvc
+2024-03-27 19:58:27,389 - progress - INFO - ### Start of inference with experiment folder `logs/knnvc/train/default-360/1711565831`
+2024-03-27 19:58:27,391 - progress - INFO - Preparing datafile for stage eval for 0 speakers
+2024-03-27 19:58:27,421 - progress - INFO - 2492 samples included (4.774 h)
+2024-03-27 19:58:27,422 - progress - INFO - 36 samples too short (0.018 h)
+2024-03-27 19:58:27,423 - progress - INFO - 83 samples too long (0.531 h)
+2024-03-27 19:58:27,436 - progress - INFO - Done with datafile prep for stage eval
+2024-03-27 19:58:27,440 - progress - INFO - Creating eval. DL for `logs/knnvc/train/default-360/1711565831/data/eval.txt`
+2024-03-27 19:58:27,441 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/eval.txt
+2024-03-27 19:58:27,442 - progress - INFO - 	Sample rate: 16000
+2024-03-27 19:58:27,443 - progress - INFO - 	Batch size: 2
+2024-03-27 19:58:27,444 - progress - INFO - 	Num. workers: 10
+2024-03-27 20:01:15,445 - progress - INFO - End of inference
+2024-03-27 20:01:15,446 - progress - INFO - ### Start of evaluation
+2024-03-27 20:01:15,448 - progress - INFO - Preparing datafile for stage train_eval for 0 speakers
+2024-03-27 20:01:18,603 - progress - INFO - 103781 samples included (363.396 h)
+2024-03-27 20:01:18,604 - progress - INFO - 216 samples too short (0.103 h)
+2024-03-27 20:01:18,605 - progress - INFO - 17 samples too long (0.107 h)
+2024-03-27 20:01:18,607 - progress - INFO - Done with datafile prep for stage train_eval
+2024-03-27 20:01:25,709 - progress - INFO - Training component `asv_ignorant`
+2024-03-27 20:01:26,134 - progress - INFO - Number of speakers in logs/knnvc/train/default-360/1711565831/data/train_eval.txt: 921
+2024-03-27 20:01:26,135 - progress - INFO - Number of speakers in training file: 921
+2024-03-27 20:01:26,137 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/train_eval.txt
+2024-03-27 20:01:26,140 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/train_eval.txt
+2024-03-27 20:01:26,141 - progress - INFO - 	Sample rate: 16000
+2024-03-27 20:01:26,142 - progress - INFO - 	Batch size: 24
+2024-03-27 20:01:26,142 - progress - INFO - 	Num. workers: 10
+2024-03-27 21:36:04,585 - progress - INFO - Reducing dimensionality to 200 with LDA
+2024-03-27 21:36:12,851 - progress - INFO - Training PLDA model
+2024-03-27 21:36:18,395 - progress - INFO - Running evaluation with component `asv_ignorant`
+2024-03-27 21:36:18,678 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/eval_trials.txt
+2024-03-27 21:36:18,680 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/eval_trials.txt
+2024-03-27 21:36:18,681 - progress - INFO - 	Sample rate: 16000
+2024-03-27 21:36:18,682 - progress - INFO - 	Batch size: 24
+2024-03-27 21:36:18,683 - progress - INFO - 	Num. workers: 10
+2024-03-27 21:36:21,681 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/eval_enrolls.txt
+2024-03-27 21:36:21,687 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/eval_enrolls.txt
+2024-03-27 21:36:21,688 - progress - INFO - 	Sample rate: 16000
+2024-03-27 21:36:21,690 - progress - INFO - 	Batch size: 24
+2024-03-27 21:36:21,691 - progress - INFO - 	Num. workers: 10
+2024-03-27 21:36:31,380 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-03-27 21:36:32,117 - progress - INFO - Averaging LLRs across speakers
+2024-03-27 21:36:32,118 - progress - INFO - No. of speaker pairs: 98080
+2024-03-27 21:36:32,218 - progress - INFO - Analysing ASV results for logs/knnvc/train/default-360/1711565831/data/anon_eval.txt
+2024-03-27 21:36:32,222 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-03-27 21:36:32,810 - progress - INFO - Computing EER for gender M
+2024-03-27 21:36:32,839 - progress - INFO - Computing EER for gender F
+2024-03-27 21:36:32,844 - progress - INFO - Computing EER for target 16
+2024-03-27 21:36:32,848 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,849 - progress - INFO - Computing EER for target 7
+2024-03-27 21:36:32,851 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,852 - progress - INFO - Computing EER for target 15
+2024-03-27 21:36:32,854 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,855 - progress - INFO - Computing EER for target 2
+2024-03-27 21:36:32,861 - progress - INFO - Computing EER for target 36
+2024-03-27 21:36:32,863 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,864 - progress - INFO - Computing EER for target 0
+2024-03-27 21:36:32,869 - progress - INFO - Computing EER for target 27
+2024-03-27 21:36:32,871 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,872 - progress - INFO - Computing EER for target 5
+2024-03-27 21:36:32,873 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,874 - progress - INFO - Computing EER for target 1
+2024-03-27 21:36:32,879 - progress - INFO - Computing EER for target 12
+2024-03-27 21:36:32,884 - progress - INFO - Computing EER for target 18
+2024-03-27 21:36:32,888 - progress - INFO - Computing EER for target 37
+2024-03-27 21:36:32,893 - progress - INFO - Computing EER for target 14
+2024-03-27 21:36:32,898 - progress - INFO - Computing EER for target 9
+2024-03-27 21:36:32,900 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,901 - progress - INFO - Computing EER for target 4
+2024-03-27 21:36:32,903 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,904 - progress - INFO - Computing EER for target 21
+2024-03-27 21:36:32,908 - progress - INFO - Computing EER for target 17
+2024-03-27 21:36:32,910 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,911 - progress - INFO - Computing EER for target 31
+2024-03-27 21:36:32,912 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,913 - progress - INFO - Computing EER for target 6
+2024-03-27 21:36:32,915 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,916 - progress - INFO - Computing EER for target 33
+2024-03-27 21:36:32,918 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,919 - progress - INFO - Computing EER for target 10
+2024-03-27 21:36:32,921 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,922 - progress - INFO - Computing EER for target 25
+2024-03-27 21:36:32,923 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,924 - progress - INFO - Computing EER for target 30
+2024-03-27 21:36:32,926 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,927 - progress - INFO - Computing EER for target 34
+2024-03-27 21:36:32,929 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,930 - progress - INFO - Computing EER for target 11
+2024-03-27 21:36:32,934 - progress - INFO - Computing EER for target 20
+2024-03-27 21:36:32,936 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,937 - progress - INFO - Computing EER for target 23
+2024-03-27 21:36:32,939 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,940 - progress - INFO - Computing EER for target 35
+2024-03-27 21:36:32,941 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,942 - progress - INFO - Computing EER for target 38
+2024-03-27 21:36:32,944 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:32,945 - progress - INFO - Computing EER for target 8
+2024-03-27 21:36:32,947 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-27 21:36:33,522 - progress - INFO - Training component `asv_lazy_informed`
+2024-03-27 21:36:33,527 - progress - INFO - Anonymizing training data: logs/knnvc/train/default-360/1711565831/data/train_eval.txt
+2024-03-27 21:36:33,528 - progress - INFO - Set consistent targets of knnvc to False
+2024-03-27 21:36:33,529 - progress - INFO - Disabling consistent targets
+2024-03-27 21:36:33,533 - progress - INFO - Creating eval. DL for `logs/knnvc/train/default-360/1711565831/data/train_eval.txt`
+2024-03-27 21:36:33,534 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/train_eval.txt
+2024-03-27 21:36:33,535 - progress - INFO - 	Sample rate: 16000
+2024-03-27 21:36:33,536 - progress - INFO - 	Batch size: 2
+2024-03-27 21:36:33,537 - progress - INFO - 	Num. workers: 10
+2024-03-28 00:24:17,287 - progress - INFO - Number of speakers in logs/knnvc/train/default-360/1711565831/data/anon_train_eval.txt: 921
+2024-03-28 00:24:17,289 - progress - INFO - Number of speakers in training file: 921
+2024-03-28 00:24:17,291 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/anon_train_eval.txt
+2024-03-28 00:24:17,293 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/anon_train_eval.txt
+2024-03-28 00:24:17,294 - progress - INFO - 	Sample rate: 16000
+2024-03-28 00:24:17,295 - progress - INFO - 	Batch size: 24
+2024-03-28 00:24:17,296 - progress - INFO - 	Num. workers: 10
+2024-03-28 02:08:51,183 - progress - INFO - Reducing dimensionality to 200 with LDA
+2024-03-28 02:08:56,791 - progress - INFO - Training PLDA model
+2024-03-28 02:09:01,397 - progress - INFO - Running evaluation with component `asv_lazy_informed`
+2024-03-28 02:09:01,401 - progress - INFO - Datafile splits into trial and enrolls already exist, skipping
+2024-03-28 02:09:01,402 - progress - INFO - Anonymizing enrollment data of the ASV system
+2024-03-28 02:09:01,403 - progress - INFO - Set consistent targets of knnvc to True
+2024-03-28 02:09:01,404 - progress - INFO - Enabling consistent targets and removing previous targets
+2024-03-28 02:09:01,408 - progress - INFO - Creating eval. DL for `logs/knnvc/train/default-360/1711565831/data/eval_enrolls.txt`
+2024-03-28 02:09:01,409 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/eval_enrolls.txt
+2024-03-28 02:09:01,410 - progress - INFO - 	Sample rate: 16000
+2024-03-28 02:09:01,411 - progress - INFO - 	Batch size: 2
+2024-03-28 02:09:01,412 - progress - INFO - 	Num. workers: 10
+2024-03-28 02:11:08,114 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/eval_trials.txt
+2024-03-28 02:11:08,117 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/eval_trials.txt
+2024-03-28 02:11:08,118 - progress - INFO - 	Sample rate: 16000
+2024-03-28 02:11:08,119 - progress - INFO - 	Batch size: 24
+2024-03-28 02:11:08,120 - progress - INFO - 	Num. workers: 10
+2024-03-28 02:11:12,150 - progress - INFO - Computing SpkId vectors of logs/knnvc/train/default-360/1711565831/data/anon_eval_enrolls.txt
+2024-03-28 02:11:12,154 - progress - INFO - Creating dataloader for logs/knnvc/train/default-360/1711565831/data/anon_eval_enrolls.txt
+2024-03-28 02:11:12,159 - progress - INFO - 	Sample rate: 16000
+2024-03-28 02:11:12,159 - progress - INFO - 	Batch size: 24
+2024-03-28 02:11:12,160 - progress - INFO - 	Num. workers: 10
+2024-03-28 02:11:24,746 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-03-28 02:11:25,435 - progress - INFO - Averaging LLRs across speakers
+2024-03-28 02:11:25,437 - progress - INFO - No. of speaker pairs: 98080
+2024-03-28 02:11:25,527 - progress - INFO - Analysing ASV results for logs/knnvc/train/default-360/1711565831/data/anon_eval.txt
+2024-03-28 02:11:25,530 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-03-28 02:11:25,978 - progress - INFO - Computing EER for gender M
+2024-03-28 02:11:25,984 - progress - INFO - Computing EER for gender F
+2024-03-28 02:11:25,987 - progress - INFO - Computing EER for target 16
+2024-03-28 02:11:25,989 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:25,989 - progress - INFO - Computing EER for target 7
+2024-03-28 02:11:25,991 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:25,992 - progress - INFO - Computing EER for target 15
+2024-03-28 02:11:25,993 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:25,994 - progress - INFO - Computing EER for target 2
+2024-03-28 02:11:25,999 - progress - INFO - Computing EER for target 36
+2024-03-28 02:11:26,001 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,002 - progress - INFO - Computing EER for target 0
+2024-03-28 02:11:26,006 - progress - INFO - Computing EER for target 27
+2024-03-28 02:11:26,007 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,008 - progress - INFO - Computing EER for target 5
+2024-03-28 02:11:26,009 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,010 - progress - INFO - Computing EER for target 1
+2024-03-28 02:11:26,013 - progress - INFO - Computing EER for target 12
+2024-03-28 02:11:26,017 - progress - INFO - Computing EER for target 18
+2024-03-28 02:11:26,021 - progress - INFO - Computing EER for target 37
+2024-03-28 02:11:26,025 - progress - INFO - Computing EER for target 14
+2024-03-28 02:11:26,029 - progress - INFO - Computing EER for target 9
+2024-03-28 02:11:26,030 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,031 - progress - INFO - Computing EER for target 4
+2024-03-28 02:11:26,032 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,033 - progress - INFO - Computing EER for target 21
+2024-03-28 02:11:26,037 - progress - INFO - Computing EER for target 17
+2024-03-28 02:11:26,038 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,039 - progress - INFO - Computing EER for target 31
+2024-03-28 02:11:26,040 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,041 - progress - INFO - Computing EER for target 6
+2024-03-28 02:11:26,043 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,043 - progress - INFO - Computing EER for target 33
+2024-03-28 02:11:26,045 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,046 - progress - INFO - Computing EER for target 10
+2024-03-28 02:11:26,047 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,048 - progress - INFO - Computing EER for target 25
+2024-03-28 02:11:26,050 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,050 - progress - INFO - Computing EER for target 30
+2024-03-28 02:11:26,052 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,053 - progress - INFO - Computing EER for target 34
+2024-03-28 02:11:26,054 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,055 - progress - INFO - Computing EER for target 11
+2024-03-28 02:11:26,059 - progress - INFO - Computing EER for target 20
+2024-03-28 02:11:26,060 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,061 - progress - INFO - Computing EER for target 23
+2024-03-28 02:11:26,062 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,063 - progress - INFO - Computing EER for target 35
+2024-03-28 02:11:26,064 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,065 - progress - INFO - Computing EER for target 38
+2024-03-28 02:11:26,067 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,068 - progress - INFO - Computing EER for target 8
+2024-03-28 02:11:26,069 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-03-28 02:11:26,074 - progress - INFO - End of evaluation

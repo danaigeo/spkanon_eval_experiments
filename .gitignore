@@ -14,7 +14,8 @@ slurm
 LibriSpeech
 target_feats
 logs/knnvc/train-new
-logs/knnvc/train
+logs/knnvc/train/*
+!logs/knnvc/train/default-360/
 logs/knnvc/debug
 logs/knnvc/eval/exp_with_targets
 logs/knnvc/eval/exp_with_model_ls360&edacc
