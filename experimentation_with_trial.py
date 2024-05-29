@@ -174,7 +174,11 @@ def sample_and_filter_speakers(args, write_file, max_utter, filtered_utterances_
 
     if seed is not None:
         random.seed(seed)
-        
+
+    with open(write_file, "a") as f:
+        f.write(f"scenario seed file num_of_trials unique_pairs pairs threshold eer\n")
+
+  
     for increase in range(1, max_utter):
         with open(write_file, "a") as f:
                 f.write(f"\n")
@@ -234,10 +238,7 @@ def sample_and_filter_speakers(args, write_file, max_utter, filtered_utterances_
             print("Different-speaker accuracy:", np.sum(llrs[pairs[:, 0] != pairs[:, 1]] < thresholds[key]) / len(pairs))
             
             with open(write_file, "a") as f:
-                if scenario == "ignorant":
-                    f.write(f"{seed} {args.file} {num_utterances_per_speaker} {len(unique_pairs)} {pairs.shape[0]} {thresholds[key]} {eer}\n")
-                else:
-                    f.write(f" {thresholds[key]} {eer}\n")
+                f.write(f"{scenario} {seed} {args.file} {num_utterances_per_speaker} {len(unique_pairs)} {pairs.shape[0]} {thresholds[key]} {eer}\n")
 
 
 

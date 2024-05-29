@@ -60,6 +60,9 @@ def sample_and_filter_speakers(args,write_file, start_speakers, end_speakers, in
 
 
     seed_eval = args.seed_eval
+    with open(write_file, "a") as f:
+        f.write(f"scenario seed file num_of_speakers unique_pairs threshold eer\n")
+
 
     # Optional: Set a seed for reproducibility
     if seed is not None:
@@ -143,11 +146,8 @@ def sample_and_filter_speakers(args,write_file, start_speakers, end_speakers, in
                 print( llr_avgs.size, thresholds[key], eer)
                 
                 with open(write_file, "a") as f:
-                    if scenario == "ignorant":
-                        f.write(f"{seed} {seed_eval } {max_speakers} {llr_avgs.size} {thresholds[key]} {eer}\n")
-                    else:
-                        f.write(f" {thresholds[key]} {eer}\n")
-
+                    f.write(f"{scenario} {seed} {seed_eval} {max_speakers} {llr_avgs.size} {thresholds[key]} {eer}\n")
+                    
 def main(args):
     """
     1. Select the .txt with the experiments.
