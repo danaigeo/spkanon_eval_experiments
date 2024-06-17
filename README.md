@@ -4,7 +4,7 @@
 
 ## SpkAnon Eval
 
-The following experimentation is based on the evaluation framework `spkanon_eval` respository: 
+The following experimentation is based on the evaluation framework found in the `spkanon_eval` respository: 
 https://github.com/carlosfranzreb/spkanon_eval used for privacy evaluation of speaker anonymization models
 
 ## Evaluated anonymization models
