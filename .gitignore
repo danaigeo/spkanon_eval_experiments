@@ -9,11 +9,14 @@ checkpoints
 *.wav
 *.pt
 *.tar.gz
+*.npy
 
 =2.3.0
 =0.5.15
 LibriSpeech
 
+trainers
+slurm/
 target_feats
 logs/knnvc/train-new
 logs/knnvc/train/*
@@ -21,9 +24,22 @@ logs/knnvc/train/*
 logs/knnvc/debug
 logs/knnvc/eval/exp_with_targets
 logs/knnvc/eval/exp_with_model_ls360&edacc
+logs/stargan/eval/run_all_seeds_ls-test-clean
 
-
-logs/stargan
-
+logs/stargan/eval-temp
+logs/stargan/debug
+logs/stargan/train-badversion
+logs/stargan/train/debug-old
+logs/stargan/train/new-and-improved-spsc
+logs/knnvc/
 __init__.py
-spkanon_eval
+
+
+configs
+trainers/
+spkanon_eval/
+!spkanon_eval/logs
+enrolls_*.txt
+trials_*.txt
+filtered_*.txt
+s_filtered_*.txt
