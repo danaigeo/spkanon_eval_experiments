@@ -1,0 +1,156 @@
+2024-04-08 20:36:39,273 - progress - INFO - Preparing datafile for stage targets for 0 speakers
+2024-04-08 20:36:39,305 - progress - INFO - 2605 samples included (4.951 h)
+2024-04-08 20:36:39,305 - progress - INFO - 37 samples too short (0.019 h)
+2024-04-08 20:36:39,306 - progress - INFO - 0 samples too long (0.0 h)
+2024-04-08 20:36:39,310 - progress - INFO - Done with datafile prep for stage targets
+2024-04-08 20:36:48,981 - progress - INFO - {'cls': 'spkanon_models.knnvc.converter.Converter', 'n_neighbors': 4, 'target_feats': None, 'wavlm': '${featex.wavlm}', 'wavlm_dl': {'batch_size': '${batch_size}', 'num_workers': '${data.config.num_workers}', 'sample_rate': '${sample_rate}'}, 'exp_folder': '${exp_folder}', 'input': {'feats': 'feats', 'n_feats': 'n_feats', 'source': 'source', 'target': 'target'}}
+2024-04-08 20:36:48,988 - progress - INFO - spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399
+2024-04-08 20:36:48,988 - progress - INFO - Loading target data
+2024-04-08 20:36:49,002 - progress - INFO - Extracting target features
+2024-04-08 20:36:56,931 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/targets.txt`
+2024-04-08 20:36:56,932 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/targets.txt
+2024-04-08 20:36:56,933 - progress - INFO - 	Sample rate: 16000
+2024-04-08 20:36:56,935 - progress - INFO - 	Batch size: 2
+2024-04-08 20:36:56,937 - progress - INFO - 	Num. workers: 10
+2024-04-08 20:37:57,752 - progress - INFO - Passing target selection algorithm to knnvc
+2024-04-08 20:37:57,756 - progress - INFO - ### Start of inference with experiment folder `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399`
+2024-04-08 20:37:57,757 - progress - INFO - Preparing datafile for stage eval for 0 speakers
+2024-04-08 20:38:02,800 - progress - INFO - 148182 samples included (496.399 h)
+2024-04-08 20:38:02,801 - progress - INFO - 470 samples too short (0.233 h)
+2024-04-08 20:38:02,804 - progress - INFO - 36 samples too long (0.227 h)
+2024-04-08 20:38:02,805 - progress - INFO - Done with datafile prep for stage eval
+2024-04-08 20:38:02,810 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval.txt`
+2024-04-08 20:38:02,811 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval.txt
+2024-04-08 20:38:02,812 - progress - INFO - 	Sample rate: 16000
+2024-04-08 20:38:02,813 - progress - INFO - 	Batch size: 2
+2024-04-08 20:38:02,813 - progress - INFO - 	Num. workers: 10
+2024-04-09 01:01:54,739 - progress - INFO - End of inference
+2024-04-09 01:01:54,809 - progress - INFO - ### Start of evaluation
+2024-04-09 01:02:02,326 - progress - INFO - Loading LDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/lda.pkl`
+2024-04-09 01:02:02,356 - progress - INFO - Loading PLDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/plda.pkl`
+2024-04-09 01:02:02,386 - progress - INFO - Running evaluation with component `asv_ignorant`
+2024-04-09 01:02:08,873 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_trials.txt
+2024-04-09 01:02:08,875 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_trials.txt
+2024-04-09 01:02:08,876 - progress - INFO - 	Sample rate: 16000
+2024-04-09 01:02:08,877 - progress - INFO - 	Batch size: 24
+2024-04-09 01:02:08,878 - progress - INFO - 	Num. workers: 10
+2024-04-09 01:02:16,195 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_enrolls.txt
+2024-04-09 01:02:16,201 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_enrolls.txt
+2024-04-09 01:02:16,202 - progress - INFO - 	Sample rate: 16000
+2024-04-09 01:02:16,203 - progress - INFO - 	Batch size: 24
+2024-04-09 01:02:16,204 - progress - INFO - 	Num. workers: 10
+2024-04-09 04:13:59,374 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-09 07:08:42,655 - progress - INFO - Averaging LLRs across speakers
+2024-04-09 07:08:42,668 - progress - INFO - No. of speaker pairs: 171420656
+2024-04-09 07:14:22,152 - progress - INFO - Analysing ASV results for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/anon_eval.txt
+2024-04-09 07:14:22,207 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-09 07:14:22,521 - progress - INFO - lllsl 1359556
+2024-04-09 07:14:28,213 - progress - INFO - Computing EER for target 7
+2024-04-09 07:14:28,276 - progress - INFO - Computing EER for target 8
+2024-04-09 07:14:28,332 - progress - INFO - Computing EER for target 24
+2024-04-09 07:14:28,384 - progress - INFO - Computing EER for target 18
+2024-04-09 07:14:28,437 - progress - INFO - Computing EER for target 15
+2024-04-09 07:14:28,489 - progress - INFO - Computing EER for target 34
+2024-04-09 07:14:28,537 - progress - INFO - Computing EER for target 5
+2024-04-09 07:14:28,591 - progress - INFO - Computing EER for target 0
+2024-04-09 07:14:28,647 - progress - INFO - Computing EER for target 22
+2024-04-09 07:14:28,697 - progress - INFO - Computing EER for target 12
+2024-04-09 07:14:28,750 - progress - INFO - Computing EER for target 38
+2024-04-09 07:14:28,800 - progress - INFO - Computing EER for target 17
+2024-04-09 07:14:28,842 - progress - INFO - Computing EER for target 30
+2024-04-09 07:14:28,890 - progress - INFO - Computing EER for target 14
+2024-04-09 07:14:28,935 - progress - INFO - Computing EER for target 4
+2024-04-09 07:14:28,987 - progress - INFO - Computing EER for target 21
+2024-04-09 07:14:29,041 - progress - INFO - Computing EER for target 16
+2024-04-09 07:14:29,093 - progress - INFO - Computing EER for target 29
+2024-04-09 07:14:29,136 - progress - INFO - Computing EER for target 9
+2024-04-09 07:14:29,188 - progress - INFO - Computing EER for target 35
+2024-04-09 07:14:29,243 - progress - INFO - Computing EER for target 2
+2024-04-09 07:14:29,290 - progress - INFO - Computing EER for target 6
+2024-04-09 07:14:29,334 - progress - INFO - Computing EER for target 3
+2024-04-09 07:14:29,379 - progress - INFO - Computing EER for target 11
+2024-04-09 07:14:29,420 - progress - INFO - Computing EER for target 19
+2024-04-09 07:14:29,474 - progress - INFO - Computing EER for target 32
+2024-04-09 07:14:29,523 - progress - INFO - Computing EER for target 10
+2024-04-09 07:14:29,578 - progress - INFO - Computing EER for target 20
+2024-04-09 07:14:29,629 - progress - INFO - Computing EER for target 33
+2024-04-09 07:14:29,681 - progress - INFO - Computing EER for target 31
+2024-04-09 07:14:29,731 - progress - INFO - Computing EER for target 25
+2024-04-09 07:14:29,779 - progress - INFO - Computing EER for target 13
+2024-04-09 07:14:29,825 - progress - INFO - Computing EER for target 37
+2024-04-09 07:14:29,879 - progress - INFO - Computing EER for target 39
+2024-04-09 07:14:29,936 - progress - INFO - Computing EER for target 27
+2024-04-09 07:14:29,986 - progress - INFO - Computing EER for target 1
+2024-04-09 07:14:30,031 - progress - INFO - Computing EER for target 28
+2024-04-09 07:14:30,066 - progress - INFO - Computing EER for target 36
+2024-04-09 07:14:30,118 - progress - INFO - Computing EER for target 23
+2024-04-09 07:14:30,180 - progress - INFO - Computing EER for target 26
+2024-04-09 07:14:30,756 - progress - INFO - Loading LDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/lda.pkl`
+2024-04-09 07:14:30,777 - progress - INFO - Loading PLDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/plda.pkl`
+2024-04-09 07:14:30,801 - progress - INFO - Running evaluation with component `asv_lazy_informed`
+2024-04-09 07:14:30,809 - progress - INFO - Datafile splits into trial and enrolls already exist, skipping
+2024-04-09 07:14:30,811 - progress - INFO - Anonymizing enrollment data of the ASV system
+2024-04-09 07:14:30,813 - progress - INFO - Set consistent targets of knnvc to True
+2024-04-09 07:14:30,814 - progress - INFO - Enabling consistent targets and removing previous targets
+2024-04-09 07:14:30,820 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_enrolls.txt`
+2024-04-09 07:14:30,821 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_enrolls.txt
+2024-04-09 07:14:30,823 - progress - INFO - 	Sample rate: 16000
+2024-04-09 07:14:30,825 - progress - INFO - 	Batch size: 2
+2024-04-09 07:14:30,826 - progress - INFO - 	Num. workers: 10
+2024-04-09 12:09:31,399 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_trials.txt
+2024-04-09 12:09:31,415 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/eval_trials.txt
+2024-04-09 12:09:31,416 - progress - INFO - 	Sample rate: 16000
+2024-04-09 12:09:31,416 - progress - INFO - 	Batch size: 24
+2024-04-09 12:09:31,417 - progress - INFO - 	Num. workers: 10
+2024-04-09 12:09:39,069 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/anon_eval_enrolls.txt
+2024-04-09 12:09:39,074 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/anon_eval_enrolls.txt
+2024-04-09 12:09:39,075 - progress - INFO - 	Sample rate: 16000
+2024-04-09 12:09:39,076 - progress - INFO - 	Batch size: 24
+2024-04-09 12:09:39,077 - progress - INFO - 	Num. workers: 10
+2024-04-09 16:57:19,448 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-09 19:48:52,329 - progress - INFO - Averaging LLRs across speakers
+2024-04-09 19:48:52,467 - progress - INFO - No. of speaker pairs: 171420656
+2024-04-09 19:54:06,631 - progress - INFO - Analysing ASV results for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-train-other-500/1712601399/data/anon_eval.txt
+2024-04-09 19:54:06,724 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-09 19:54:07,081 - progress - INFO - lllsl 1359556
+2024-04-09 19:54:13,721 - progress - INFO - Computing EER for target 7
+2024-04-09 19:54:13,806 - progress - INFO - Computing EER for target 8
+2024-04-09 19:54:13,871 - progress - INFO - Computing EER for target 24
+2024-04-09 19:54:13,929 - progress - INFO - Computing EER for target 18
+2024-04-09 19:54:13,989 - progress - INFO - Computing EER for target 15
+2024-04-09 19:54:14,047 - progress - INFO - Computing EER for target 34
+2024-04-09 19:54:14,101 - progress - INFO - Computing EER for target 5
+2024-04-09 19:54:14,163 - progress - INFO - Computing EER for target 0
+2024-04-09 19:54:14,228 - progress - INFO - Computing EER for target 22
+2024-04-09 19:54:14,289 - progress - INFO - Computing EER for target 12
+2024-04-09 19:54:14,348 - progress - INFO - Computing EER for target 38
+2024-04-09 19:54:14,408 - progress - INFO - Computing EER for target 17
+2024-04-09 19:54:14,456 - progress - INFO - Computing EER for target 30
+2024-04-09 19:54:14,513 - progress - INFO - Computing EER for target 14
+2024-04-09 19:54:14,565 - progress - INFO - Computing EER for target 4
+2024-04-09 19:54:14,629 - progress - INFO - Computing EER for target 21
+2024-04-09 19:54:14,690 - progress - INFO - Computing EER for target 16
+2024-04-09 19:54:14,750 - progress - INFO - Computing EER for target 29
+2024-04-09 19:54:14,798 - progress - INFO - Computing EER for target 9
+2024-04-09 19:54:14,856 - progress - INFO - Computing EER for target 35
+2024-04-09 19:54:14,914 - progress - INFO - Computing EER for target 2
+2024-04-09 19:54:14,966 - progress - INFO - Computing EER for target 6
+2024-04-09 19:54:15,015 - progress - INFO - Computing EER for target 3
+2024-04-09 19:54:15,068 - progress - INFO - Computing EER for target 11
+2024-04-09 19:54:15,119 - progress - INFO - Computing EER for target 19
+2024-04-09 19:54:15,180 - progress - INFO - Computing EER for target 32
+2024-04-09 19:54:15,235 - progress - INFO - Computing EER for target 10
+2024-04-09 19:54:15,297 - progress - INFO - Computing EER for target 20
+2024-04-09 19:54:15,354 - progress - INFO - Computing EER for target 33
+2024-04-09 19:54:15,413 - progress - INFO - Computing EER for target 31
+2024-04-09 19:54:15,467 - progress - INFO - Computing EER for target 25
+2024-04-09 19:54:15,514 - progress - INFO - Computing EER for target 13
+2024-04-09 19:54:15,566 - progress - INFO - Computing EER for target 37
+2024-04-09 19:54:15,629 - progress - INFO - Computing EER for target 39
+2024-04-09 19:54:15,692 - progress - INFO - Computing EER for target 27
+2024-04-09 19:54:15,749 - progress - INFO - Computing EER for target 1
+2024-04-09 19:54:15,810 - progress - INFO - Computing EER for target 28
+2024-04-09 19:54:15,848 - progress - INFO - Computing EER for target 36
+2024-04-09 19:54:15,907 - progress - INFO - Computing EER for target 23
+2024-04-09 19:54:15,977 - progress - INFO - Computing EER for target 26
+2024-04-09 19:54:16,054 - progress - INFO - End of evaluation
