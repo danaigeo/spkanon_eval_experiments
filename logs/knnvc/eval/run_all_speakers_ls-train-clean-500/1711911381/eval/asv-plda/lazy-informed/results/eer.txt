@@ -1,2 +1,0 @@
-dataset n_pairs threshold eer
-anon_eval 62500 -0.38679277487453206 0.053285140562249

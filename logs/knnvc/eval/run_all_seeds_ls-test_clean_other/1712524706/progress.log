@@ -1,0 +1,169 @@
+2024-04-07 23:18:26,489 - progress - INFO - Preparing datafile for stage targets for 0 speakers
+2024-04-07 23:18:26,531 - progress - INFO - 2605 samples included (4.951 h)
+2024-04-07 23:18:26,532 - progress - INFO - 37 samples too short (0.019 h)
+2024-04-07 23:18:26,532 - progress - INFO - 0 samples too long (0.0 h)
+2024-04-07 23:18:26,536 - progress - INFO - Done with datafile prep for stage targets
+2024-04-07 23:18:36,708 - progress - INFO - {'cls': 'spkanon_models.knnvc.converter.Converter', 'n_neighbors': 4, 'target_feats': None, 'wavlm': '${featex.wavlm}', 'wavlm_dl': {'batch_size': '${batch_size}', 'num_workers': '${data.config.num_workers}', 'sample_rate': '${sample_rate}'}, 'exp_folder': '${exp_folder}', 'input': {'feats': 'feats', 'n_feats': 'n_feats', 'source': 'source', 'target': 'target'}}
+2024-04-07 23:18:36,725 - progress - INFO - spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706
+2024-04-07 23:18:36,726 - progress - INFO - Loading target data
+2024-04-07 23:18:36,739 - progress - INFO - Extracting target features
+2024-04-07 23:18:43,040 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/targets.txt`
+2024-04-07 23:18:43,041 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/targets.txt
+2024-04-07 23:18:43,042 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:18:43,044 - progress - INFO - 	Batch size: 2
+2024-04-07 23:18:43,046 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:19:29,022 - progress - INFO - Passing target selection algorithm to knnvc
+2024-04-07 23:19:29,032 - progress - INFO - ### Start of inference with experiment folder `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706`
+2024-04-07 23:19:29,034 - progress - INFO - Preparing datafile for stage eval for 0 speakers
+2024-04-07 23:19:29,059 - progress - INFO - 2492 samples included (4.774 h)
+2024-04-07 23:19:29,059 - progress - INFO - 36 samples too short (0.018 h)
+2024-04-07 23:19:29,060 - progress - INFO - 83 samples too long (0.531 h)
+2024-04-07 23:19:29,087 - progress - INFO - 2843 samples included (5.006 h)
+2024-04-07 23:19:29,088 - progress - INFO - 50 samples too short (0.025 h)
+2024-04-07 23:19:29,089 - progress - INFO - 39 samples too long (0.247 h)
+2024-04-07 23:19:29,091 - progress - INFO - Done with datafile prep for stage eval
+2024-04-07 23:19:29,093 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval.txt`
+2024-04-07 23:19:29,094 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval.txt
+2024-04-07 23:19:29,095 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:19:29,096 - progress - INFO - 	Batch size: 2
+2024-04-07 23:19:29,096 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:22:46,042 - progress - INFO - End of inference
+2024-04-07 23:22:46,043 - progress - INFO - ### Start of evaluation
+2024-04-07 23:22:51,875 - progress - INFO - Loading LDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/lda.pkl`
+2024-04-07 23:22:51,906 - progress - INFO - Loading PLDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/ignorant/train/models/plda.pkl`
+2024-04-07 23:22:51,929 - progress - INFO - Running evaluation with component `asv_ignorant`
+2024-04-07 23:22:52,300 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_trials.txt
+2024-04-07 23:22:52,302 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_trials.txt
+2024-04-07 23:22:52,303 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:22:52,303 - progress - INFO - 	Batch size: 24
+2024-04-07 23:22:52,304 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:22:54,409 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_enrolls.txt
+2024-04-07 23:22:54,412 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_enrolls.txt
+2024-04-07 23:22:54,413 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:22:54,414 - progress - INFO - 	Batch size: 24
+2024-04-07 23:22:54,415 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:23:08,692 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-07 23:23:09,963 - progress - INFO - Averaging LLRs across speakers
+2024-04-07 23:23:09,965 - progress - INFO - No. of speaker pairs: 384126
+2024-04-07 23:23:10,293 - progress - INFO - Analysing ASV results for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/anon_eval.txt
+2024-04-07 23:23:10,299 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-07 23:23:10,309 - progress - INFO - lllsl 5329
+2024-04-07 23:23:10,853 - progress - INFO - Computing EER for gender M
+2024-04-07 23:23:10,859 - progress - INFO - Computing EER for gender F
+2024-04-07 23:23:10,862 - progress - INFO - Computing EER for target 1
+2024-04-07 23:23:10,868 - progress - INFO - Computing EER for target 28
+2024-04-07 23:23:10,871 - progress - INFO - Computing EER for target 17
+2024-04-07 23:23:10,875 - progress - INFO - Computing EER for target 26
+2024-04-07 23:23:10,878 - progress - INFO - Computing EER for target 27
+2024-04-07 23:23:10,881 - progress - INFO - Computing EER for target 3
+2024-04-07 23:23:10,885 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,886 - progress - INFO - Computing EER for target 9
+2024-04-07 23:23:10,889 - progress - INFO - Computing EER for target 32
+2024-04-07 23:23:10,892 - progress - INFO - Computing EER for target 0
+2024-04-07 23:23:10,895 - progress - INFO - Computing EER for target 4
+2024-04-07 23:23:10,897 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,897 - progress - INFO - Computing EER for target 38
+2024-04-07 23:23:10,901 - progress - INFO - Computing EER for target 7
+2024-04-07 23:23:10,904 - progress - INFO - Computing EER for target 23
+2024-04-07 23:23:10,905 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,906 - progress - INFO - Computing EER for target 22
+2024-04-07 23:23:10,909 - progress - INFO - Computing EER for target 2
+2024-04-07 23:23:10,910 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,910 - progress - INFO - Computing EER for target 11
+2024-04-07 23:23:10,911 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,912 - progress - INFO - Computing EER for target 33
+2024-04-07 23:23:10,915 - progress - INFO - Computing EER for target 19
+2024-04-07 23:23:10,917 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,917 - progress - INFO - Computing EER for target 18
+2024-04-07 23:23:10,921 - progress - INFO - Computing EER for target 24
+2024-04-07 23:23:10,922 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,922 - progress - INFO - Computing EER for target 8
+2024-04-07 23:23:10,923 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,924 - progress - INFO - Computing EER for target 31
+2024-04-07 23:23:10,927 - progress - INFO - Computing EER for target 14
+2024-04-07 23:23:10,931 - progress - INFO - Computing EER for target 29
+2024-04-07 23:23:10,934 - progress - INFO - Computing EER for target 20
+2024-04-07 23:23:10,938 - progress - INFO - Computing EER for target 39
+2024-04-07 23:23:10,941 - progress - INFO - Computing EER for target 12
+2024-04-07 23:23:10,945 - progress - INFO - Computing EER for target 34
+2024-04-07 23:23:10,946 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,947 - progress - INFO - Computing EER for target 35
+2024-04-07 23:23:10,950 - progress - INFO - Computing EER for target 6
+2024-04-07 23:23:10,951 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:10,952 - progress - INFO - Computing EER for target 30
+2024-04-07 23:23:10,956 - progress - INFO - Computing EER for target 21
+2024-04-07 23:23:10,957 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:23:11,224 - progress - INFO - Loading LDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/lda.pkl`
+2024-04-07 23:23:11,245 - progress - INFO - Loading PLDA ckpt `logs/knnvc/train/default-360/1711565569/eval/asv-plda/lazy-informed/train/models/plda.pkl`
+2024-04-07 23:23:11,267 - progress - INFO - Running evaluation with component `asv_lazy_informed`
+2024-04-07 23:23:11,272 - progress - INFO - Datafile splits into trial and enrolls already exist, skipping
+2024-04-07 23:23:11,273 - progress - INFO - Anonymizing enrollment data of the ASV system
+2024-04-07 23:23:11,273 - progress - INFO - Set consistent targets of knnvc to True
+2024-04-07 23:23:11,274 - progress - INFO - Enabling consistent targets and removing previous targets
+2024-04-07 23:23:11,277 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_enrolls.txt`
+2024-04-07 23:23:11,277 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_enrolls.txt
+2024-04-07 23:23:11,278 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:23:11,279 - progress - INFO - 	Batch size: 2
+2024-04-07 23:23:11,280 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:26:06,547 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_trials.txt
+2024-04-07 23:26:06,549 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/eval_trials.txt
+2024-04-07 23:26:06,550 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:26:06,551 - progress - INFO - 	Batch size: 24
+2024-04-07 23:26:06,552 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:26:08,501 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/anon_eval_enrolls.txt
+2024-04-07 23:26:08,503 - progress - INFO - Creating dataloader for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/anon_eval_enrolls.txt
+2024-04-07 23:26:08,504 - progress - INFO - 	Sample rate: 16000
+2024-04-07 23:26:08,505 - progress - INFO - 	Batch size: 24
+2024-04-07 23:26:08,506 - progress - INFO - 	Num. workers: 10
+2024-04-07 23:26:31,480 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-07 23:26:32,710 - progress - INFO - Averaging LLRs across speakers
+2024-04-07 23:26:32,711 - progress - INFO - No. of speaker pairs: 384126
+2024-04-07 23:26:33,036 - progress - INFO - Analysing ASV results for spkanon_eval/logs/knnvc/eval/run_all_seeds_ls-test-clean-other/1712524706/data/anon_eval.txt
+2024-04-07 23:26:33,039 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-07 23:26:33,059 - progress - INFO - lllsl 5329
+2024-04-07 23:26:33,667 - progress - INFO - Computing EER for gender M
+2024-04-07 23:26:33,672 - progress - INFO - Computing EER for gender F
+2024-04-07 23:26:33,677 - progress - INFO - Computing EER for target 1
+2024-04-07 23:26:33,682 - progress - INFO - Computing EER for target 28
+2024-04-07 23:26:33,685 - progress - INFO - Computing EER for target 17
+2024-04-07 23:26:33,689 - progress - INFO - Computing EER for target 26
+2024-04-07 23:26:33,692 - progress - INFO - Computing EER for target 27
+2024-04-07 23:26:33,695 - progress - INFO - Computing EER for target 3
+2024-04-07 23:26:33,697 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,697 - progress - INFO - Computing EER for target 9
+2024-04-07 23:26:33,701 - progress - INFO - Computing EER for target 32
+2024-04-07 23:26:33,705 - progress - INFO - Computing EER for target 0
+2024-04-07 23:26:33,709 - progress - INFO - Computing EER for target 4
+2024-04-07 23:26:33,710 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,711 - progress - INFO - Computing EER for target 38
+2024-04-07 23:26:33,714 - progress - INFO - Computing EER for target 7
+2024-04-07 23:26:33,717 - progress - INFO - Computing EER for target 23
+2024-04-07 23:26:33,718 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,719 - progress - INFO - Computing EER for target 22
+2024-04-07 23:26:33,722 - progress - INFO - Computing EER for target 2
+2024-04-07 23:26:33,723 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,724 - progress - INFO - Computing EER for target 11
+2024-04-07 23:26:33,725 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,725 - progress - INFO - Computing EER for target 33
+2024-04-07 23:26:33,728 - progress - INFO - Computing EER for target 19
+2024-04-07 23:26:33,730 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,731 - progress - INFO - Computing EER for target 18
+2024-04-07 23:26:33,734 - progress - INFO - Computing EER for target 24
+2024-04-07 23:26:33,735 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,735 - progress - INFO - Computing EER for target 8
+2024-04-07 23:26:33,736 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,737 - progress - INFO - Computing EER for target 31
+2024-04-07 23:26:33,741 - progress - INFO - Computing EER for target 14
+2024-04-07 23:26:33,744 - progress - INFO - Computing EER for target 29
+2024-04-07 23:26:33,747 - progress - INFO - Computing EER for target 20
+2024-04-07 23:26:33,750 - progress - INFO - Computing EER for target 39
+2024-04-07 23:26:33,754 - progress - INFO - Computing EER for target 12
+2024-04-07 23:26:33,757 - progress - INFO - Computing EER for target 34
+2024-04-07 23:26:33,758 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,759 - progress - INFO - Computing EER for target 35
+2024-04-07 23:26:33,762 - progress - INFO - Computing EER for target 6
+2024-04-07 23:26:33,764 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,764 - progress - INFO - Computing EER for target 30
+2024-04-07 23:26:33,768 - progress - INFO - Computing EER for target 21
+2024-04-07 23:26:33,769 - progress - WARNING - There are no different-speaker pairs; cannot compute EER
+2024-04-07 23:26:33,772 - progress - INFO - End of evaluation
