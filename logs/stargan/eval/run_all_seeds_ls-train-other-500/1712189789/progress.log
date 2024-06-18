@@ -1,0 +1,107 @@
+2024-04-04 02:16:30,982 - progress - INFO - Initialized mel-spectrogram extractor with config:
+2024-04-04 02:16:30,983 - progress - INFO - 	n_mels: 80
+2024-04-04 02:16:30,984 - progress - INFO - 	n_fft: 2048
+2024-04-04 02:16:30,985 - progress - INFO - 	win_length: 1200
+2024-04-04 02:16:30,985 - progress - INFO - 	hop_length: 300
+2024-04-04 02:16:38,070 - progress - INFO - Passing target selection algorithm to star_gan
+2024-04-04 02:16:38,087 - progress - INFO - ### Start of inference with experiment folder `spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789`
+2024-04-04 02:16:38,088 - progress - INFO - Preparing datafile for stage eval for 0 speakers
+2024-04-04 02:16:41,486 - progress - INFO - 148182 samples included (496.399 h)
+2024-04-04 02:16:41,487 - progress - INFO - 470 samples too short (0.233 h)
+2024-04-04 02:16:41,488 - progress - INFO - 36 samples too long (0.227 h)
+2024-04-04 02:16:41,489 - progress - INFO - Done with datafile prep for stage eval
+2024-04-04 02:16:41,498 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval.txt`
+2024-04-04 02:16:41,499 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval.txt
+2024-04-04 02:16:41,500 - progress - INFO - 	Sample rate: 24000
+2024-04-04 02:16:41,501 - progress - INFO - 	Batch size: 2
+2024-04-04 02:16:41,502 - progress - INFO - 	Num. workers: 10
+2024-04-04 11:48:40,185 - progress - INFO - End of inference
+2024-04-04 11:48:40,202 - progress - INFO - ### Start of evaluation
+2024-04-04 11:48:47,137 - progress - INFO - Loading LDA ckpt `logs/stargan/train/default-360/1711973011/eval/asv-plda/ignorant/train/models/lda.pkl`
+2024-04-04 11:48:47,177 - progress - INFO - Loading PLDA ckpt `logs/stargan/train/default-360/1711973011/eval/asv-plda/ignorant/train/models/plda.pkl`
+2024-04-04 11:48:47,224 - progress - INFO - Running evaluation with component `asv_ignorant`
+2024-04-04 11:48:53,865 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_trials.txt
+2024-04-04 11:48:53,868 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_trials.txt
+2024-04-04 11:48:53,870 - progress - INFO - 	Sample rate: 16000
+2024-04-04 11:48:53,871 - progress - INFO - 	Batch size: 24
+2024-04-04 11:48:53,872 - progress - INFO - 	Num. workers: 10
+2024-04-04 11:49:02,573 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_enrolls.txt
+2024-04-04 11:49:02,576 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_enrolls.txt
+2024-04-04 11:49:02,577 - progress - INFO - 	Sample rate: 16000
+2024-04-04 11:49:02,578 - progress - INFO - 	Batch size: 24
+2024-04-04 11:49:02,579 - progress - INFO - 	Num. workers: 10
+2024-04-04 14:51:01,383 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-04 15:57:21,193 - progress - INFO - Averaging LLRs across speakers
+2024-04-04 15:57:21,194 - progress - INFO - No. of speaker pairs: 171420656
+2024-04-04 16:02:02,009 - progress - INFO - Analysing ASV results for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/anon_eval.txt
+2024-04-04 16:02:02,060 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-04 16:02:02,359 - progress - INFO - lllsl 1359556
+2024-04-04 16:02:06,852 - progress - INFO - Computing EER for target 10
+2024-04-04 16:02:06,914 - progress - INFO - Computing EER for target 0
+2024-04-04 16:02:06,968 - progress - INFO - Computing EER for target 15
+2024-04-04 16:02:07,025 - progress - INFO - Computing EER for target 16
+2024-04-04 16:02:07,076 - progress - INFO - Computing EER for target 17
+2024-04-04 16:02:07,129 - progress - INFO - Computing EER for target 2
+2024-04-04 16:02:07,184 - progress - INFO - Computing EER for target 7
+2024-04-04 16:02:07,233 - progress - INFO - Computing EER for target 13
+2024-04-04 16:02:07,294 - progress - INFO - Computing EER for target 8
+2024-04-04 16:02:07,351 - progress - INFO - Computing EER for target 11
+2024-04-04 16:02:07,405 - progress - INFO - Computing EER for target 5
+2024-04-04 16:02:07,460 - progress - INFO - Computing EER for target 19
+2024-04-04 16:02:07,521 - progress - INFO - Computing EER for target 14
+2024-04-04 16:02:07,570 - progress - INFO - Computing EER for target 9
+2024-04-04 16:02:07,621 - progress - INFO - Computing EER for target 3
+2024-04-04 16:02:07,674 - progress - INFO - Computing EER for target 18
+2024-04-04 16:02:07,736 - progress - INFO - Computing EER for target 4
+2024-04-04 16:02:07,794 - progress - INFO - Computing EER for target 1
+2024-04-04 16:02:07,848 - progress - INFO - Computing EER for target 6
+2024-04-04 16:02:07,906 - progress - INFO - Computing EER for target 12
+2024-04-04 16:02:08,642 - progress - INFO - Loading LDA ckpt `logs/stargan/train/default-360/1711973011/eval/asv-plda/lazy-informed/train/models/lda.pkl`
+2024-04-04 16:02:08,658 - progress - INFO - Loading PLDA ckpt `logs/stargan/train/default-360/1711973011/eval/asv-plda/lazy-informed/train/models/plda.pkl`
+2024-04-04 16:02:08,677 - progress - INFO - Running evaluation with component `asv_lazy_informed`
+2024-04-04 16:02:08,680 - progress - INFO - Datafile splits into trial and enrolls already exist, skipping
+2024-04-04 16:02:08,681 - progress - INFO - Anonymizing enrollment data of the ASV system
+2024-04-04 16:02:08,682 - progress - INFO - Set consistent targets of star_gan to True
+2024-04-04 16:02:08,683 - progress - INFO - Enabling consistent targets and removing previous targets
+2024-04-04 16:02:08,686 - progress - INFO - Creating eval. DL for `spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_enrolls.txt`
+2024-04-04 16:02:08,686 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_enrolls.txt
+2024-04-04 16:02:08,687 - progress - INFO - 	Sample rate: 16000
+2024-04-04 16:02:08,688 - progress - INFO - 	Batch size: 2
+2024-04-04 16:02:08,689 - progress - INFO - 	Num. workers: 10
+2024-04-04 22:34:30,748 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_trials.txt
+2024-04-04 22:34:30,773 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/eval_trials.txt
+2024-04-04 22:34:30,774 - progress - INFO - 	Sample rate: 16000
+2024-04-04 22:34:30,776 - progress - INFO - 	Batch size: 24
+2024-04-04 22:34:30,776 - progress - INFO - 	Num. workers: 10
+2024-04-04 22:34:41,529 - progress - INFO - Computing SpkId vectors of spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/anon_eval_enrolls.txt
+2024-04-04 22:34:41,533 - progress - INFO - Creating dataloader for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/anon_eval_enrolls.txt
+2024-04-04 22:34:41,534 - progress - INFO - 	Sample rate: 16000
+2024-04-04 22:34:41,535 - progress - INFO - 	Batch size: 24
+2024-04-04 22:34:41,535 - progress - INFO - 	Num. workers: 10
+2024-04-05 05:32:47,137 - progress - INFO - Computing LLRs for all pairs of trial and enrollment utterances
+2024-04-05 06:37:38,712 - progress - INFO - Averaging LLRs across speakers
+2024-04-05 06:37:38,713 - progress - INFO - No. of speaker pairs: 171420656
+2024-04-05 06:42:02,359 - progress - INFO - Analysing ASV results for spkanon_eval/logs/stargan/eval/run_all_seeds_ls-train-other-500/1712189789/data/anon_eval.txt
+2024-04-05 06:42:02,420 - progress - INFO - Computing EER of the whole dataset and dumping ROC curve
+2024-04-05 06:42:02,730 - progress - INFO - lllsl 1359556
+2024-04-05 06:42:06,665 - progress - INFO - Computing EER for target 10
+2024-04-05 06:42:06,743 - progress - INFO - Computing EER for target 0
+2024-04-05 06:42:06,808 - progress - INFO - Computing EER for target 15
+2024-04-05 06:42:06,879 - progress - INFO - Computing EER for target 16
+2024-04-05 06:42:06,942 - progress - INFO - Computing EER for target 17
+2024-04-05 06:42:07,008 - progress - INFO - Computing EER for target 2
+2024-04-05 06:42:07,075 - progress - INFO - Computing EER for target 7
+2024-04-05 06:42:07,137 - progress - INFO - Computing EER for target 13
+2024-04-05 06:42:07,215 - progress - INFO - Computing EER for target 8
+2024-04-05 06:42:07,288 - progress - INFO - Computing EER for target 11
+2024-04-05 06:42:07,358 - progress - INFO - Computing EER for target 5
+2024-04-05 06:42:07,430 - progress - INFO - Computing EER for target 19
+2024-04-05 06:42:07,506 - progress - INFO - Computing EER for target 14
+2024-04-05 06:42:07,567 - progress - INFO - Computing EER for target 9
+2024-04-05 06:42:07,631 - progress - INFO - Computing EER for target 3
+2024-04-05 06:42:07,695 - progress - INFO - Computing EER for target 18
+2024-04-05 06:42:07,777 - progress - INFO - Computing EER for target 4
+2024-04-05 06:42:07,851 - progress - INFO - Computing EER for target 1
+2024-04-05 06:42:07,925 - progress - INFO - Computing EER for target 6
+2024-04-05 06:42:07,999 - progress - INFO - Computing EER for target 12
+2024-04-05 06:42:08,089 - progress - INFO - End of evaluation
