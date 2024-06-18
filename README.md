@@ -33,5 +33,5 @@ The experimentation is performed on subsets of the evaluation datasets by consid
 
 The experimentation scripts for each evaluation strategy are to be found in the `scripts` folder. The scripts:
 1. select the pre-trained LDA and PLDA models (under `logs/stargan/train` and `logs/knnvc/train`)
-2. select the trial and enrollment folders, which contain LibriSpeech files (may be anonymized, but same name).
+2. select the trial and enrollment folders, which contain LibriSpeech files ((under `logs/stargan/eval` and `logs/knnvc/eval`)).
 3. perform privacy evaluation (computation of SpkId vectors, PLDA mapping and EER computation ) with different speaker population sizes and sample amounts per speaker. 
