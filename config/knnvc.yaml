@@ -1,10 +1,10 @@
-name: "StarGANv2-VC"
+name: "kNN-VC"
 
-datasets_cfg: spkanon_eval/config/datasets/librispeech.yaml
-seed: 0
+datasets_cfg: spkanon_eval/config/datasets/vctk.yaml
+seed: 400
 max_speakers: 0
-log_dir: logs/stargan/train/default-360
-device: cpu
+log_dir: spkanon_eval/logs/knnvc/eval/run_all_seeds_vctk
+device: cpu # overwritten on runtime
 
 inference:
   input: # input of the `infer` method of the anonymizer
@@ -12,25 +12,19 @@ inference:
     target: target
   run: true # store anonymized utterances; can be true, false or a path to an exp folder
 
-resources: # these values will be overwritten on runtime
-  device: cpu
-  n_devices: 1
-  n_nodes: 1
-  debug: false # important for choice of strategy and validation set
-
 target_selection_cfg: spkanon_eval/config/components/target_selection/random.yaml
-pipeline_cfg: spkanon_eval/spkanon_models/stargan/config.yaml # must clone spkanon_models repo first (see README)
+pipeline_cfg: spkanon_eval/spkanon_models/knnvc/config.yaml # must clone spkanon_models repo first (see README)
 
 eval: # calls func `eval_dir` of each component, passing exp_folder and config
   config:
-    seed: 300
+    seed: 5000
     baseline: false # non-anonymized speech is evaluated; inference and train must be false, eval must be present
     exp_folder: null # if not null, this folder is evaluated instead of current exp_folder
     sample_rate: ${synthesis.sample_rate} # SR of the anonymized data
     asv_reduce_dims: 200
     asv_spkid_cfg: spkanon_eval/config/components/spkid/xvector.yaml
     spkid_emb_model_ckpt: null
-    spkid_train: false
+    spkid_train: false 
 
   components:
     asv_ignorant_cfg: spkanon_eval/config/components/asv/ignorant.yaml
