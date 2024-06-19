@@ -18,16 +18,15 @@ The components and build instructions are to be found in the `spkanon_models` re
 
 ## Datasets:
 
-Experimentation was conducted on the LibriSpeech datasets (https://www.openslr.org/12) test-clean, test-other and train-other-500 that can be found under the `data` folder.
+Experimentation was conducted on the LibriSpeech datasets (https://www.openslr.org/12) test-clean and test-other, comprising the test set, denoted 'tco', and train-other-500, denoted 'to500', that can be found under the `data` folder.
 
 ## Experimentation Strategy
 
-
 The experimentation is performed on subsets of the evaluation datasets by considering two data reduction strategies:
-1. selecting different amounts of speakers to be evaluated, and
+1. selecting different amounts of speakers to be evaluated with `scripts/experimentation_with_num_speakers.py`, and
 2. selecting different amounts of utterances per speaker by
-    1. selecting different amount of enrollment utterances with a fixed number of trials per speaker, and 
-    2. selecting different amount of trial utterances, while keeping the number of enrollments per speaker consistent.
+    1. selecting different amount of enrollment utterances with a fixed number of trials per speaker with scripts `scripts/experimentation_with_enroll_utts.py`, and 
+    2. selecting different amount of trial utterances, while keeping the number of enrollments per speaker consistent, with `scripts/experimentation_with_trial_utts.py`.
 
 ## Scripts
 
